@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Alza PS AI Tools',
+  title: 'PS AI Tools',
   description: 'Tvůj průvodce AI nástroji v prodejní síti',
   manifest: '/manifest.json',
   appleWebApp: {

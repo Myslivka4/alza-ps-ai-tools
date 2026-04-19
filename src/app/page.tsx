@@ -57,7 +57,7 @@ export default function Home() {
             <span className="font-black text-sm" style={{ color: '#222464' }}>AI</span>
           </div>
           <div>
-            <h1 className="text-white font-bold text-xl leading-tight">Alza PS AI Tools</h1>
+            <h1 className="text-white font-bold text-xl leading-tight">PS AI Tools</h1>
             <p className="text-xs" style={{ color: '#aaff0099' }}>{tools.length} nástrojů k dispozici</p>
           </div>
         </div>
@@ -98,7 +98,7 @@ export default function Home() {
 
       {/* Footer */}
       <div className="px-4 pb-8 text-center text-xs" style={{ backgroundColor: '#1a1b50', color: '#ffffff33' }}>
-        Alza PS AI Tools
+        PS AI Tools
       </div>
 
       {/* Rating modal */}
