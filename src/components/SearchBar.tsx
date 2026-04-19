@@ -3,9 +3,10 @@
 interface Props {
   value: string
   onChange: (v: string) => void
+  placeholder: string
 }
 
-export function SearchBar({ value, onChange }: Props) {
+export function SearchBar({ value, onChange, placeholder }: Props) {
   return (
     <div className="relative">
       <svg
@@ -21,7 +22,7 @@ export function SearchBar({ value, onChange }: Props) {
         type="search"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        placeholder="Hledat nástroj..."
+        placeholder={placeholder}
         className="w-full pl-9 pr-4 py-2.5 rounded-xl text-sm focus:outline-none focus:ring-2"
         style={{
           backgroundColor: '#2d2f80',

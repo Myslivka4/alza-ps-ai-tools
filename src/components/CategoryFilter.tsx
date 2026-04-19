@@ -6,12 +6,14 @@ interface Props {
   active: string
   onChange: (cat: string) => void
   counts: Record<string, number>
+  labels: Record<string, string>
+  allLabel: string
 }
 
-export function CategoryFilter({ active, onChange, counts }: Props) {
+export function CategoryFilter({ active, onChange, counts, labels, allLabel }: Props) {
   const all = [
-    { id: 'vse', label: 'Vše', emoji: '✨' },
-    ...Object.entries(CATEGORIES).map(([id, { label, emoji }]) => ({ id, label, emoji })),
+    { id: 'vse', label: allLabel, emoji: '✨' },
+    ...Object.entries(CATEGORIES).map(([id, { emoji }]) => ({ id, label: labels[id] ?? id, emoji })),
   ]
 
   return (
@@ -31,9 +33,7 @@ export function CategoryFilter({ active, onChange, counts }: Props) {
           >
             <span>{emoji}</span>
             <span>{label}</span>
-            <span className="text-[10px]" style={{ opacity: 0.6 }}>
-              {count}
-            </span>
+            <span className="text-[10px]" style={{ opacity: 0.6 }}>{count}</span>
           </button>
         )
       })}
