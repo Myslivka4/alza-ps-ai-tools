@@ -79,8 +79,8 @@ export function RatingModal({ tool, onClose }: Props) {
             <button
               onClick={handleSubmit}
               disabled={!stars || submitting}
-              className="w-full py-3 rounded-xl text-white font-semibold text-sm transition-all active:scale-95 disabled:opacity-40"
-              style={{ backgroundColor: '#FF6600' }}
+              className="w-full py-3 rounded-xl font-bold text-sm transition-all active:scale-95 disabled:opacity-40"
+              style={{ backgroundColor: '#aaff00', color: '#222464' }}
             >
               {submitting ? 'Odesílám...' : 'Odeslat hodnocení'}
             </button>

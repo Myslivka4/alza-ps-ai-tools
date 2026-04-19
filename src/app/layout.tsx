@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#FF6600',
+  themeColor: '#222464',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
@@ -26,7 +26,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="cs">
-      <body className="bg-gray-50 min-h-screen">{children}</body>
+      <body className="min-h-screen" style={{ backgroundColor: '#1a1b50' }}>{children}</body>
     </html>
   )
 }

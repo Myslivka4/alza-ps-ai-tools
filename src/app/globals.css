@@ -10,6 +10,13 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+:root {
+  --alza-navy: #222464;
+  --alza-navy-light: #2d2f80;
+  --alza-green: #aaff00;
+  --alza-green-dark: #88cc00;
+}
+
 @keyframes slide-up {
   from { transform: translateY(100%); }
   to   { transform: translateY(0); }

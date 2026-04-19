@@ -23,15 +23,15 @@ export function CategoryFilter({ active, onChange, counts }: Props) {
           <button
             key={id}
             onClick={() => onChange(id)}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-all ${
-              isActive
-                ? 'bg-[#FF6600] text-white shadow-sm'
-                : 'bg-white text-gray-600 border border-gray-200'
-            }`}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-all"
+            style={isActive
+              ? { backgroundColor: '#aaff00', color: '#222464' }
+              : { backgroundColor: '#2d2f80', color: '#ffffffcc', border: '1px solid #3d3f9a' }
+            }
           >
             <span>{emoji}</span>
             <span>{label}</span>
-            <span className={`text-[10px] ${isActive ? 'text-orange-100' : 'text-gray-400'}`}>
+            <span className="text-[10px]" style={{ opacity: 0.6 }}>
               {count}
             </span>
           </button>

@@ -4,8 +4,8 @@
   "description": "Tvůj průvodce AI nástroji",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#FF6600",
-  "theme_color": "#FF6600",
+  "background_color": "#222464",
+  "theme_color": "#222464",
   "orientation": "portrait",
   "icons": [
     {

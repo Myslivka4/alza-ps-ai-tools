@@ -51,20 +51,20 @@ export default function Home() {
   return (
     <main className="max-w-2xl mx-auto">
       {/* Header */}
-      <div className="px-4 pt-12 pb-5" style={{ background: 'linear-gradient(135deg, #FF6600 0%, #CC4400 100%)' }}>
+      <div className="px-4 pt-12 pb-5" style={{ backgroundColor: '#222464' }}>
         <div className="flex items-center gap-3 mb-1">
-          <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
-            <span className="text-white font-black text-sm">AI</span>
+          <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#aaff00' }}>
+            <span className="font-black text-sm" style={{ color: '#222464' }}>AI</span>
           </div>
           <div>
             <h1 className="text-white font-bold text-xl leading-tight">Alza PS AI Tools</h1>
-            <p className="text-orange-100 text-xs">{tools.length} nástrojů k dispozici</p>
+            <p className="text-xs" style={{ color: '#aaff0099' }}>{tools.length} nástrojů k dispozici</p>
           </div>
         </div>
       </div>
 
       {/* Search + filters */}
-      <div className="px-4 py-3 bg-white border-b border-gray-100 sticky top-0 z-10 shadow-sm">
+      <div className="px-4 py-3 sticky top-0 z-10" style={{ backgroundColor: '#222464', borderBottom: '1px solid #2d2f80' }}>
         <div className="mb-3">
           <SearchBar value={search} onChange={setSearch} />
         </div>
@@ -76,9 +76,9 @@ export default function Home() {
       </div>
 
       {/* Tool grid */}
-      <div className="px-4 py-4">
+      <div className="px-4 py-4" style={{ backgroundColor: '#1a1b50' }}>
         {filtered.length === 0 ? (
-          <div className="text-center py-16 text-gray-400">
+          <div className="text-center py-16" style={{ color: '#ffffff66' }}>
             <p className="text-4xl mb-3">🔍</p>
             <p className="text-sm">Žádný nástroj nenalezen</p>
           </div>
@@ -97,7 +97,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <div className="px-4 pb-8 text-center text-xs text-gray-300">
+      <div className="px-4 pb-8 text-center text-xs" style={{ backgroundColor: '#1a1b50', color: '#ffffff33' }}>
         Alza PS AI Tools
       </div>
 

@@ -61,8 +61,8 @@ export function ToolCard({ tool, rating, onRate }: Props) {
       {/* Open button */}
       <button
         onClick={handleOpen}
-        className="w-full py-2.5 rounded-xl text-white text-sm font-semibold transition-all active:scale-95 hover:brightness-110"
-        style={{ backgroundColor: '#FF6600' }}
+        className="w-full py-2.5 rounded-xl text-sm font-bold transition-all active:scale-95 hover:brightness-110"
+        style={{ backgroundColor: '#aaff00', color: '#222464' }}
       >
         Otevřít nástroj
       </button>
