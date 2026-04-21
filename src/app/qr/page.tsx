@@ -5,6 +5,7 @@ import QRCode from 'react-qr-code'
 import Link from 'next/link'
 
 const APP_URL = 'https://alza-ps-ai-tools.vercel.app'
+const QR_URL = 'https://alza-ps-ai-tools.vercel.app?utm_source=qr'
 
 export default function QRPage() {
   const [copied, setCopied] = useState(false)
@@ -76,7 +77,7 @@ export default function QRPage() {
         {/* QR kód */}
         <div className="flex justify-center items-center p-8 bg-white" ref={qrRef}>
           <QRCode
-            value={APP_URL}
+            value={QR_URL}
             size={220}
             bgColor="#ffffff"
             fgColor="#222464"
