@@ -40,6 +40,20 @@ export const tools: Tool[] = [
     emoji: '🧠',
   },
   {
+    id: 'sales-panel',
+    name: 'Sales Panel',
+    url: 'https://sales-panel.netlify.app/',
+    descriptions: {
+      cs: 'Nahrajte denní hlášení a okamžitě získejte přehledné grafy a statistiky. Kalkulačka mzdy spočítá vaše provize a plánovač cílů vás udrží na správné cestě k vašim metám.',
+      sk: 'Nahrajte denné hlásenie a okamžite získajte prehľadné grafy a štatistiky. Kalkulačka mzdy vypočíta vaše provízie a plánovač cieľov vás udrží na správnej ceste k vašim cieľom.',
+      hu: 'Töltse fel a napi jelentést, és azonnal áttekinthető grafikonokat és statisztikákat kap. A bérkalkulátor kiszámítja a jutalékait, a célkövető segít a helyes úton maradni.',
+      en: 'Upload your daily report and instantly get clear charts and statistics. The salary calculator computes your commissions and the goal planner keeps you on track towards your targets.',
+    },
+    category: 'analyza',
+    platform: 'webapp',
+    emoji: '📈',
+  },
+  {
     id: 'alza-ps-partak',
     name: 'Alza PS Parťák',
     url: 'https://chatgpt.com/g/g-69844727134c8191a3b803b9f53ab735-alza-ps-partak',
