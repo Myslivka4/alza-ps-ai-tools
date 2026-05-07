@@ -6,7 +6,7 @@ export interface Tool {
   url: string
   descriptions: Record<Lang, string>
   category: 'prodej' | 'asistenti' | 'analyza' | 'vzdelavani'
-  platform: 'alzagen' | 'chatgpt' | 'notebooklm' | 'codepen'
+  platform: 'alzagen' | 'chatgpt' | 'notebooklm' | 'codepen' | 'webapp'
   emoji: string
 }
 
@@ -22,6 +22,7 @@ export const PLATFORMS: Record<string, { label: string; color: string; bg: strin
   chatgpt:    { label: 'ChatGPT',    color: '#10A37F', bg: '#E8F8F4' },
   notebooklm: { label: 'NotebookLM', color: '#4285F4', bg: '#E8F0FE' },
   codepen:    { label: 'CodePen',    color: '#0ebeff', bg: '#E3F8FF' },
+  webapp:     { label: 'Web App',    color: '#7C3AED', bg: '#EDE9FE' },
 }
 
 export const tools: Tool[] = [
