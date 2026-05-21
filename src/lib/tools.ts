@@ -83,6 +83,20 @@ export const tools: Tool[] = [
     emoji: '🏆',
   },
   {
+    id: 'simulator-prodeje',
+    name: 'Simulátor prodeje',
+    url: 'https://chatgpt.com/g/g-698d911a70388191922f0d7324bda290-alza-cz-simulator-prodeje',
+    descriptions: {
+      cs: 'Simulátor slouží k tréninku výdejového rozhovoru na Alze, kde systém hraje realistického zákazníka a pomáhá procvičit zjišťování potřeb, nabídku služeb i následnou zpětnou vazbu.',
+      sk: 'Simulátor slúži na tréning výdajového rozhovoru v Alze, kde systém hrá realistického zákazníka a pomáha precvičiť zisťovanie potrieb, ponuku služieb aj následnú spätnú väzbu.',
+      hu: 'A szimulátor az Alzán zajló kiadási párbeszéd edzésére szolgál – a rendszer valósághű ügyfelet játszik, és segít begyakorolni az igényfelmérést, a szolgáltatások ajánlását és az utólagos visszajelzést.',
+      en: 'A simulator for training the checkout conversation at Alza, where the system plays a realistic customer and helps practise needs discovery, service offerings and follow-up feedback.',
+    },
+    category: 'prodej',
+    platform: 'chatgpt',
+    emoji: '🛒',
+  },
+  {
     id: 'alzakacka',
     name: 'Alzakačka',
     url: 'https://codepen.io/JakubCerny/full/GgZXpMo',

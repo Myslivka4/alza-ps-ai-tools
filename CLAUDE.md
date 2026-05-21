@@ -43,7 +43,7 @@ src/
   contexts/
     LanguageContext.tsx – React context pro jazyk
   lib/
-    tools.ts            – Data všech 13 nástrojů (vícejazyčné)
+    tools.ts            – Data všech 14 nástrojů (vícejazyčné)
     i18n.ts             – Překlady UI textů do 4 jazyků
     supabase.ts         – Supabase client (volitelný)
     session.ts          – Anonymní session ID (localStorage)
@@ -67,12 +67,13 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJ...
 ```
 Bez těchto proměnných aplikace funguje, jen se neukládají data.
 
-## Nástroje v aplikaci (13 celkem)
+## Nástroje v aplikaci (14 celkem)
 | ID | Název | Platforma | Kategorie |
 |----|-------|-----------|-----------|
 | alzagen | AlzaGen | alzagen | asistenti |
 | alza-ps-partak | Alza PS Parťák | chatgpt | prodej |
 | prodejni-coach-5p | Prodejní Coach – 5P | chatgpt | prodej |
+| simulator-prodeje | Simulátor prodeje | chatgpt | prodej |
 | alzakacka | Alzakačka | codepen | analyza |
 | apf-prehled | ApF přehled a benefity | notebooklm | vzdelavani |
 | apf-trenazer | ApF trenažér | chatgpt | prodej |
